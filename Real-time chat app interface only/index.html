@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div>
+        <div class="brand-row">
+          <div class="brand">Real-Time Chat App</div>
+          <button id="newChatBtn" class="btn small">+ New</button>
+        </div>
+        <div id="conversations" class="conversations"></div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="footer-actions">
+          <button id="themeToggle" class="btn secondary small">Theme</button>
+          <button id="exportAll" class="btn secondary small">Export</button>
+        </div>
+        <div class="footer-bottom">
+          <span class="muted tiny">Frontend Only • API-Ready</span>
+          <button id="clearAll" class="btn secondary tiny">Clear All</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Chat -->
+    <main class="main">
+      <header class="main-header">
+        <div>
+          <h2 id="chatTitle">Welcome</h2>
+          <div id="chatMeta" class="muted">Start a new chat</div>
+        </div>
+        <div class="header-actions">
+          <button id="renameBtn" class="btn secondary small">Rename</button>
+          <button id="clearBtn" class="btn secondary small">Clear</button>
+        </div>
+      </header>
+
+      <section id="messages" class="messages"></section>
+
+      <div class="composer">
+        <textarea id="textInput" placeholder="Type your message..."></textarea>
+        <button id="sendBtn" class="btn">Send</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
